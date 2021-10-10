@@ -1,7 +1,10 @@
 import { Category } from "../model/Category";
-import { ICreateCategoryDTO } from "./ICategoriesRepository";
+import {
+  ICategoriesRepository,
+  ICreateCategoryDTO,
+} from "./ICategoriesRepository";
 
-class CategoriesRepository {
+class CategoriesRepository implements ICategoriesRepository {
   // atributo private porque só vai ser acessado pelo repositório
   private categories: Category[];
 
